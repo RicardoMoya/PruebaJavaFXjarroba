@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="pruebajavafxjarroba.SampleController">
+  <children>
+    <TextField fx:id="tfNombre" layoutX="100.0" layoutY="24.0" prefWidth="200.0" />
+    <Label layoutX="37.0" layoutY="24.0" text="Nombre" />
+    <Label layoutX="36.0" layoutY="73.0" text="Apellido" />
+    <TextField fx:id="tfApellido" layoutX="100.0" layoutY="73.0" prefWidth="200.0" />
+    <ChoiceBox fx:id="chAnio" layoutX="427.0" layoutY="49.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="1984" />
+          <String fx:value="1985" />
+          <String fx:value="1986" />
+          <String fx:value="1987" />
+          <String fx:value="1988" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <Label layoutX="312.0" layoutY="51.0" text="Año Nacimiento" />
+    <Button fx:id="btMostrar" layoutX="257.0" layoutY="139.0" mnemonicParsing="false" onAction="#accionMostrar" text="Mostrar" />
+    <TextField fx:id="tfDatos" layoutX="19.0" layoutY="218.0" prefHeight="81.0" prefWidth="562.0" />
+    <Label layoutX="28.0" layoutY="192.0" text="DATOS" />
+  </children>
+</AnchorPane>

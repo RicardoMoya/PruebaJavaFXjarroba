@@ -1,0 +1,10 @@
+.fondo{
+    -fx-background-color: #00ccff;
+}
+
+.boton{
+    -fx-font-family: "Comic Sans MS bold";
+    -fx-font-size:20px;
+    -fx-text-fill: #FF0000;
+}
+
